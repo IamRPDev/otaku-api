@@ -1,0 +1,10 @@
+[project]
+name="otaku"
+version="0.1.0"
+description="Otaku API (FastAPI)"
+requires-python=">=3.11"
+dependencies=["fastapi","uvicorn[standard]","gunicorn","httpx","orjson","pydantic-settings","redis","rq","sqlalchemy","alembic"]
+[project.optional-dependencies]
+dev=["pytest","pytest-asyncio","ruff","mypy"]
+[tool.ruff]
+line-length=100
